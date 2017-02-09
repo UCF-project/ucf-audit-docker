@@ -1,0 +1,14 @@
+version: '2'
+services:
+  aatt:
+    image: 'docker-aatt'
+  wd:
+    image: 'selenium/standalone-chrome'
+  tanaguru:
+    image: 'docker-tanaguru-service'
+  asqatasun:
+    image: 'docker-asqatasun-service'
+  uat:
+    image: 'docker-uat'
+    command: ['tail', '-f', '/dev/null']
+
